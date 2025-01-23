@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+  </style>
+  
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="mobile-menu">
+      <div class="mobile-menu-logo">
+        <img src="images/logo.svg">
+        <img src="images/icon-close.svg" onclick="menuClose()">
+      </div>
+      <div class="mobile-menu-nav">
+        <a>About</a>
+        <a>Careers</a>
+        <a>Events</a>
+        <a>Products</a>
+        <a>Support</a>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="head">
+        <img src="images/logo.svg" class="logo-header">
+      <div class="menu">
+        <a>About</a>
+        <a>Careers</a>
+        <a>Events</a>
+        <a>Products</a>
+        <a>Support</a>
+        <img src="images/icon-hamburger.svg" class="hamburger" onclick="menuOpen()">
+      </div>
+    </div>
+    <section>
+      Immersive experiences that deliver
+    </section>
+  </div>
+  </div>
+  <div class="promo">
+    <div class="promo-img">
+      <img src="images/desktop/image-interactive.jpg">
+    </div>
+    <div class="promo-text">
+      <section class="promo-text-heading">The leader in interactive VR</section>
+      <section class="promo-text-description">
+        Founded in 2011, Loopstudios has been producing world-class virtual reality 
+        projects for some of the best companies around the globe. Our award-winning 
+        creations have transformed businesses through digital experiences that bind to their brand.
+      </section>
+    </div>
+  </div>
+  <div class="creations">
+    <section class="creations-header">
+      <span class="our-creations">Our creations</span>
+      <span class="see-all top">See All</span>
+    </section>
+    <div class="creations-wrap">
+      <div class="creation-item">
+        <img src="images/desktop/image-deep-earth.jpg">
+        <p>Deep earth</p>
+      </div>
+      <div class="creation-item">
+        <img src="images/desktop/image-night-arcade.jpg">
+        <p>Night arcade</p>
+      </div>
+      <div class="creation-item">
+        <img src="images/desktop/image-soccer-team.jpg"> 
+        <p>Soccer team VR</p>
+      </div>
+      <div class="creation-item">
+        <img src="images/desktop/image-grid.jpg">
+        <p>The grid</p>
+      </div>
+      <div class="creation-item">
+        <img src="images/desktop/image-from-above.jpg">
+        <p>From up above VR</p>
+      </div>
+      <div class="creation-item">
+        <img src="images/desktop/image-pocket-borealis.jpg">
+        <p>Pocket borealis</p>
+      </div>
+      <div class="creation-item">
+        <img src="images/desktop/image-curiosity.jpg">
+        <p>The curiosity</p>
+      </div>
+      <div class="creation-item">
+        <img src="images/desktop/image-fisheye.jpg">
+        <p>Make it fisheye</p>
+      </div>
+    </div>
+    <span class="see-all bottom">See All</span>
+  </div>
+  <div class="footer">
+    <div class="footer-top">
+      <img src="images/logo.svg">
+      <div class="footer-logos">
+        <img src="images/icon-facebook.svg">
+        <img src="images/icon-twitter.svg">
+        <img src="images/icon-pinterest.svg">
+        <img src="images/icon-instagram.svg">
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-menu">
+        <a>About</a>
+        <a>Careers</a>
+        <a>Events</a>
+        <a>Products</a>
+        <a>Support</a>
+      </div>
+      <span>© 2021 Loopstudios. All rights reserved.</span>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Danilo Divjak</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

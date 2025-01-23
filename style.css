@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+}
+html{
+    font-size: 24px;
+}
+body{
+    font-family: "Alata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.hero{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 5% 15% 0 10%;
+    height: 60%;
+    align-items: start;
+}
+.hero section{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: clamp(1rem, 5vw, 5rem);
+    width: 50%;
+    border: 1px solid white;
+    text-align: left;
+    padding: 5px;
+    margin: 10% 0%;
+}
+.header{
+    background-image: url("images/desktop/image-hero.jpg"); 
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    color:white;
+}
+.head{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+}
+.hamburger{
+    display: none;
+}
+.mobile-menu{
+    height: 50%;
+    width:100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: black;
+    display: none;
+}
+.mobile-menu-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile-menu-nav{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 1.6rem;
+    font-family: "Josefin Sans", serif;
+    gap: 1rem;
+}
+.menu a{
+    margin: 1%;
+}
+.promo{
+    margin: 10% 10% 0 10%;
+    display: flex;
+    align-items: flex-end;
+}
+.promo-text{
+    background-color: white;
+    margin-left: -20%;
+    padding: 2% 2% 0 2%;
+    width: 50%;
+    font-size: 0.8rem;
+    text-align: left;
+    z-index: 2;
+}
+.promo-img{ 
+    display: flex; 
+    width: 100%;
+    max-width: 900px;
+}
+.promo-img img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.promo-text .promo-text-heading{
+    font-family: "Josefin Sans", serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.promo-text .promo-text-description{
+    color:hsl(0, 0%, 55%);
+    margin-top: 5%;
+}
+.creations{
+    margin: 0 10%;
+    margin-bottom: 20%;
+}
+.creations-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+    align-items: center;   
+}
+.creations-header .our-creations{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: "Josefin Sans", serif;
+}
+.see-all{
+    border: 1px solid black;
+    text-transform: uppercase;
+    padding: 5px 5em;
+    letter-spacing: 2px;
+}
+.bottom{
+    display: none;
+}
+.top{
+    display: block;
+}
+.creations-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+.creation-item{
+    max-width: 400px;
+    overflow: hidden;
+}
+.creation-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+.creation-item p{
+    position: relative;
+    margin: -50% 15% 0 0;
+    font-family: "Josefin Sans", serif;
+    color:white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    width: 50%;
+}
+.footer{
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+}
+.footer-top, .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem 1.5rem;
+}
+.footer-menu{
+    display:flex;
+    gap: 1rem;
+}
+.footer-bottom{
+    color: white;
+    font-size: 0.8rem;
+}
+.footer-bottom span{
+    color: hsl(0, 0%, 55%);
+}
+.attribution{
+    background-color: black;
+    color:white;
+}
+
+@media screen and (max-width:1173px) {
+    html{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width:1109px) {
+    html{
+        font-size: 20px;
+    }
+    .promo, .creations{
+        margin: 5% 5% 5% 5%;
+    }
+}
+@media screen and (max-width:1000px){
+    .creations-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;  
+        gap: 10px;
+    }
+    html{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:700px) {
+    html{
+        font-size: 16px;
+    }
+    .creation-item p{
+        font-size: 1.5rem;
+    }
+    .promo{
+        flex-direction: column;
+    }
+    .promo-text{
+        width: 100%;
+        margin: 5% 0%;
+        padding:0;
+        text-align: center;
+    }
+    .promo-text-heading{
+        padding: 0;
+    }
+    .menu a{
+        font-size: 0.8rem;
+    }
+    .head img{
+        width: auto;
+        height: 2;
+    }
+}
+@media screen and (max-width:500px){
+    .creations-header .our-creations{
+        font-size: 1.5rem;
+    }
+    .see-all{
+        padding: 3px 3em;
+    }
+    .creations-wrap{
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    .transform{
+        transform: rotate(90deg);
+    }
+    .creation-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: crisp-edges;
+    }
+    .creation-item{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 1;
+    overflow: hidden;
+    border-radius: 8px;
+    }
+    .footer, .footer-top, .footer-bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-top, .footer-bottom{
+        gap: 1rem;
+    }
+    .menu a{
+        display: none;
+    }
+    .hero{
+        padding: 8% 5%;
+    }
+    .hero .logo-header{
+        width: 150px;
+        height: 26px;
+    }
+    .hamburger{
+        display:flex;
+        width: 25px;
+        height: 25px;
+    }
+    .hero section{
+        width: 75%;
+        margin: 40% auto;
+        font-size: 2rem;     
+    }
+    .bottom{
+        display:flex;
+        width: 30%;
+        padding: 5%;
+        justify-content: center;
+        margin: 5% auto;    
+    }
+    .top{
+        display: none;
+    }
+}
